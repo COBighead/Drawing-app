@@ -1,0 +1,22 @@
+CSE 438 Lab3
+Chongtian Zhang
+Drawing App
+
+============= ReadMe =============
+
+Feature 1: Configuring background
+
+I added bar button on the top right for user to switch background colors. There are 3 colors to switch. User can keep press the button to loop among them. Also, a slider is added to adjust to opacity of canvas. 
+Button relates to a function in view controller class that can switch background color.
+Slider's value directly outlet to Canvas' alpha value. 
+I add this feature since user may sometimes need a view with lighter color to make the whole canvas look better visually or they want their eyes feel easier when looking into it.
+
+Feature 2: Editing existing shapes
+
+An extra segment in modes was added as "Edit". In this mode, user can select the outline color and color to fill and tap on the existing shapes to change shape's colors. 
+
+I added an edit function in touches begin and call it only in Edit Mode. Function gets the shape's attributes and set it to current selection.
+
+I add this feature because user sometimes need to alter existing shape, to avoid the situation that user have to redraw a new shape and move it into right place or resize and rotate it. This feature can save user a lot effort.
+
+Extra credit: I add an extra draw mode of only drawing outline of shape, also user can select the color of line they want. 
